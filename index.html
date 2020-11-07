@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- normalize and my styles -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700&display=swap" rel="stylesheet"> 
+
+    <!-- JavaScript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/efectos.js"></script>
+
+    <title>Café Venezuela</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <nav class="menu">
+                <!-- Solo trabajaré con etiquetas "a" porque pienso hacer un menú de navegación sencillo sin etiquetas "li" -->
+                <a href="#" id="btn-acerca-de">Acerca de</a>
+                <a href="#" id="btn-menu">Menú</a>
+                <a href="#" id="btn-galeria">Galería</a>
+                <a href="#" id="btn-ubicacion">Ubicación</a>
+            </nav>           
+
+            <div class="textos">
+                <h1 class="nombre">Café <span>Venezuela</span></h1>
+                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="acerca-de" id="acerca-de">
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="img/acerca-de.jpg" alt="Imagen Acerca de">
+                </div>
+                <article>
+                    <h3>Acerca de</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, fugit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eius iure optio distinctio cum sapiente similique quos illum est vel?</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu">
+            <div class="contenedor">
+                <h3 class="titulo" id="platillos">Menú</h3>
+                <div class="contenedor-menu">
+                    <div class="contenedor-menu2">
+                        <article>
+                            <p class="categoria">De comer</p>
+                            <div class="platillo">
+                                <p class="nombre">Lorem ipsum dolor sit.</p>
+                                <p class="precio">$15</p>
+                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, perferendis.</p>
+                            </div>
+
+                            <div class="platillo">
+                                <p class="nombre">Lorem ipsum dolor sit.</p>
+                                <p class="precio">$15</p>
+                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, perferendis.</p>
+                            </div>
+
+                            <div class="platillo">
+                                <p class="nombre">Lorem ipsum dolor sit.</p>
+                                <p class="precio">$15</p>
+                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, perferendis.</p>
+                            </div>
+
+                            <div class="platillo">
+                                <p class="nombre">Lorem ipsum dolor sit.</p>
+                                <p class="precio">$15</p>
+                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, perferendis.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <p class="categoria">De tomar</p>
+                            <div class="platillo">
+                                <p class="nombre">Lorem ipsum dolor sit.</p>
+                                <p class="precio">$15</p>
+                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, perferendis.</p>
+                            </div>
+
+                            <div class="platillo">
+                                <p class="nombre">Lorem ipsum dolor sit.</p>
+                                <p class="precio">$15</p>
+                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, perferendis.</p>
+                            </div>
+
+                            <div class="platillo">
+                                <p class="nombre">Lorem ipsum dolor sit.</p>
+                                <p class="precio">$15</p>
+                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, perferendis.</p>
+                            </div>
+
+                            <div class="platillo">
+                                <p class="nombre">Lorem ipsum dolor sit.</p>
+                                <p class="precio">$15</p>
+                                <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, perferendis.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>                    
+            </div>
+        </section>
+
+        <section class="galeria" id="galeria">
+            <div class="foto">
+                <img src="img/1.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="img/3.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="img/4.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="img/5.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="img/6.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="img/7.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="img/8.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="ubicacion" id="ubicacion">
+            <div class="contenedor">
+                <h3 class="titulo">Ubicación</h3>
+                <div class="direccion">
+                    <p class="calle">2915 Primrose Lane<br/>Anaheim, CA 92806</p>
+                    <p class="telefono">(503) 400-5479</p>
+                    <!-- Cuidado con colocar tu correo, pues los bots de internet podrían capturarlo y mandarte correo basura -->
+					<p class="correo">contacto [arroba] correo.com</p>
+                </div>
+
+                <div class="horarios">
+                    <h4>Horarios</h4>
+                    <p class="entre-semana">Lunes a Viernes <br> 8:00am - 9:00pm</p>
+                    <p class="fin-semana">Sabados y Domingos <br> 11:00am - 10:00 pm</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recordar que tienes problemas en esta parte con la ubicación -->
+        <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3733.3836847970842!2d-103.39386822512469!3d20.653963595389975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d20.6544405!2d-103.391583!5e0!3m2!1ses!2smx!4v1460436070427" width="1600" height="552" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <div class="copywright">
+                <p>Copyright Frank Agraz @ 2019</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

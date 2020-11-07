@@ -1,0 +1,47 @@
+header {
+    background: url('../img/bg.jpg') #281a0c;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+    .contenedor {
+        position: relative;
+        height: 700px;
+        .menu {
+            text-align: right;
+            a {
+                color: #fff;
+                font-size: 20px;
+                display: inline-block;
+                font-weight: 300;
+                margin: 40px 20px;
+                text-decoration: none;
+                //Se coloca para agregar animaciones Jquery a cada elemento
+                position: relative;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        //Todavía estoy entendiendo si se debe centrar .textos con flexbox o con positon:absolute
+        .textos {
+            color: #fff;
+            //para agregar animaciones con Jquery
+            position: absolute;
+            top: 50%;
+            //Pixeles calculados que permiten centrar el elemento .textos ¿Cómo se habrán calculado?
+            margin-top: -52px;
+            .nombre {
+                font-size: 50px;
+                font-weight: 600;
+                span {
+                    font-weight: 300;
+                }
+            }
+            h3 {
+                font-weight: 300;
+                font-size: 25px;
+                font-style: italic;
+            }
+        }
+    }
+}
